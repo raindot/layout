@@ -1,0 +1,52 @@
+/*
+div,ul,img {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*/
+
+
+
+.left {
+    background-color: aqua;
+    line-height: 150px;
+    float: left;
+
+}
+
+.left img {
+    vertical-align:middle;
+}
+
+.left::before{
+   content:'';
+   width:0;
+   height:100%;
+   display:inline-block;
+   position:relative;
+   vertical-align:middle;
+   background:#f00;
+ }
+
+.right {
+    background-color: aquamarine;
+    width: 500px;
+    height: 150px;
+    float: right;
+}
+
+.clearfix:after {
+content: "x";
+display: block;
+clear: both;
+visibility: hidden;
+line-height: 0;
+height: 0;
+}
+
+.content {
+    height: 150px;
+    background-color: antiquewhite;
+}

@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+/*    background-color: burlywood;*/
+}
+
+header {
+    background-color: #eee;
+    width: 100%;
+    
+    
+}
+
+.logowrap {
+    float: left;
+/*    為了讓vertical-align:middle;有效指定高度？*/
+    height: 140px;
+}
+
+/*圖片垂直置中*/
+.logowrap:before{
+   content:'';
+   width:0;
+   height:100%;
+   display:inline-block;
+   position:relative;
+   vertical-align:middle;
+   background:#f00;
+ }
+
+.logowrap img {
+    vertical-align:middle;
+}
+
+header .nav {
+    float: right;
+}
+
+.clearfix:after {
+content: "x";
+display: block;
+clear: both;
+visibility: hidden;
+line-height: 0;
+height: 0;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 10px;
+    line-height: 120px;
+}
+
+.content {
+    font-size: 0;
+    vertical-align : top;
+}
+
+.Article {
+    text-align: justify;
+}
+
+.content .inner {
+    display: inline-block;
+    width: 50%;
+    font-size: 14px;
+    vertical-align:text-top;
+    padding: 30px;
+}
+
+.content .inner p {
+    padding: 10px;
+}
+
+.content .rightimg {
+    width: 100%;
+
+}
+
+.content .title {
+    font-size: 35px;
+}
+
+.content .subtitle {
+    font-size: 20px;
+}
+
+.content section:nth-last-of-type(1) {
+    padding-top: 70px;
+/*    background-color: antiquewhite;*/
+}
+
+.content .button {
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+    color:#fff;
+    border-radius:10px;
+    
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7d7aa+0,f99403+81,f99403+96 */
+    
+    background: #f7d7aa;
+    /* Old browsers */
+    
+    background: -moz-linear-gradient(top, #f7d7aa 0%, #f99403 81%, #f99403 96%);
+    /* FF3.6-15 */
+    
+    background: -webkit-linear-gradient(top, #f7d7aa 0%, #f99403 81%, #f99403 96%);
+    /* Chrome10-25,Safari5.1-6 */
+    
+    background: linear-gradient(to bottom, #f7d7aa 0%, #f99403 81%, #f99403 96%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7d7aa', endColorstr='#f99403', GradientType=0);
+    /* IE6-9 */
+}
+
+.content .tryit {
+    text-align: center;
+}
+
+
+footer {
+    background-color:  #eee;
+    line-height: 100px;
+}
+
+footer .copyright {
+    float: left;
+}
+
+footer .social {
+    float: right;
+}

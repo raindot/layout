@@ -1,0 +1,329 @@
+@-ms-viewport {
+  width: device-width;
+}
+/* line 17, ../sass/index.scss */
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+/* line 22, ../sass/index.scss */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* line 30, ../sass/index.scss */
+body {
+  background-image: url("../img/bg.jpg");
+}
+
+/* line 104, icons/*.png */
+.icons-sprite, .icons-dribble-g, .icons-dribble, .icons-facebook-g, .icons-facebook, .icons-google-g, .icons-google, .icons-twitter-g, .icons-twitter, .facebook, .facebook:hover, .twitter, .twitter:hover, .google, .google:hover, .dribble, .dribble:hover {
+  background-image: url('../img/icons-s63c69b8762.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-dribble-g {
+  background-position: 0 0;
+  height: 32px;
+  width: 32px;
+}
+
+/* line 84, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-dribble {
+  background-position: 0 -32px;
+  height: 32px;
+  width: 32px;
+}
+
+/* line 84, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-facebook-g {
+  background-position: 0 -64px;
+  height: 32px;
+  width: 32px;
+}
+
+/* line 84, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-facebook {
+  background-position: 0 -96px;
+  height: 32px;
+  width: 32px;
+}
+
+/* line 84, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-google-g {
+  background-position: 0 -128px;
+  height: 32px;
+  width: 32px;
+}
+
+/* line 84, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-google {
+  background-position: 0 -160px;
+  height: 32px;
+  width: 32px;
+}
+
+/* line 84, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-twitter-g {
+  background-position: 0 -192px;
+  height: 32px;
+  width: 32px;
+}
+
+/* line 84, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-twitter {
+  background-position: 0 -224px;
+  height: 32px;
+  width: 32px;
+}
+
+/* line 43, ../sass/index.scss */
+.facebook {
+  background-position: 0 -96px;
+  height: 32px;
+  width: 32px;
+}
+/* line 46, ../sass/index.scss */
+.facebook:hover {
+  background-position: 0 -64px;
+  height: 32px;
+  width: 32px;
+}
+
+/* line 43, ../sass/index.scss */
+.twitter {
+  background-position: 0 -224px;
+  height: 32px;
+  width: 32px;
+}
+/* line 46, ../sass/index.scss */
+.twitter:hover {
+  background-position: 0 -192px;
+  height: 32px;
+  width: 32px;
+}
+
+/* line 43, ../sass/index.scss */
+.google {
+  background-position: 0 -160px;
+  height: 32px;
+  width: 32px;
+}
+/* line 46, ../sass/index.scss */
+.google:hover {
+  background-position: 0 -128px;
+  height: 32px;
+  width: 32px;
+}
+
+/* line 43, ../sass/index.scss */
+.dribble {
+  background-position: 0 -32px;
+  height: 32px;
+  width: 32px;
+}
+/* line 46, ../sass/index.scss */
+.dribble:hover {
+  background-position: 0 0;
+  height: 32px;
+  width: 32px;
+}
+
+/* line 54, ../sass/index.scss */
+.logobar {
+  display: none;
+}
+@media (min-width: 992px) {
+  /* line 54, ../sass/index.scss */
+  .logobar {
+    display: block;
+  }
+}
+
+/* line 61, ../sass/index.scss */
+header {
+  background: url("../img/subbg.gif");
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* line 68, ../sass/index.scss */
+header .social {
+  margin-bottom: 0;
+}
+/* line 71, ../sass/index.scss */
+header .social li {
+  display: inline-block;
+}
+/* line 76, ../sass/index.scss */
+header .tel {
+  font-size: 12px;
+}
+
+/* line 82, ../sass/index.scss */
+.navbar .navbar-brand {
+  display: inline-block;
+}
+@media (min-width: 992px) {
+  /* line 82, ../sass/index.scss */
+  .navbar .navbar-brand {
+    display: none;
+  }
+}
+
+/* line 89, ../sass/index.scss */
+.wrap {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+/* line 94, ../sass/index.scss */
+.search {
+  width: 20px;
+}
+
+/* line 98, ../sass/index.scss */
+.subbg {
+  background: url("../img/subbg.gif");
+}
+
+/* line 103, ../sass/index.scss */
+.box {
+  position: relative;
+  top: -30px;
+  z-index: 1;
+  background: #e8e8e8;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.7rem;
+}
+/* line 112, ../sass/index.scss */
+.box:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* line 115, ../sass/index.scss */
+.box:hover .more {
+  opacity: 0.5;
+}
+/* line 121, ../sass/index.scss */
+.box .more {
+  border: 1px solid transparent;
+}
+/* line 125, ../sass/index.scss */
+.box .box_title {
+  font-size: 1rem;
+}
+
+/* line 130, ../sass/index.scss */
+.title {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+/* line 135, ../sass/index.scss */
+.why ul li {
+  list-style-type: none;
+}
+/* line 138, ../sass/index.scss */
+.why ul li p,
+.why ul li div {
+  display: inline-block;
+}
+
+/* line 147, ../sass/index.scss */
+.arrow {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: white;
+  background: #e8e8e8;
+  border-radius: 50%;
+}
+
+/* line 157, ../sass/index.scss */
+.whylist {
+  color: #e8e8e8;
+}
+
+/* line 163, ../sass/index.scss */
+.article img,
+.article .article_wrap {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 168, ../sass/index.scss */
+.article .article_wrap {
+  width: 50%;
+}
+/* line 171, ../sass/index.scss */
+.article .article_wrap .date {
+  margin-left: 15px;
+  width: 90px;
+  padding: 5px;
+  color: white;
+  background: #81b701;
+}
+/* line 179, ../sass/index.scss */
+.article .article_wrap .article_text {
+  padding: 15px;
+  color: #e8e8e8;
+  font-size: 0.5rem;
+}
+
+/* line 187, ../sass/index.scss */
+.content {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+/* line 192, ../sass/index.scss */
+.chat {
+  font-size: 0.5rem;
+  background: #e8e8e8;
+  margin: 15px;
+  padding: 10px;
+}
+/* line 198, ../sass/index.scss */
+.chat::after {
+  content: '';
+  display: block;
+  position: relative;
+  bottom: -30px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 20px 0 0;
+  border-color: #e8e8e8 transparent transparent transparent;
+  left: -10px;
+}
+
+/* line 212, ../sass/index.scss */
+.chatter {
+  margin-top: 40px;
+  margin-left: 15px;
+}
+/* line 216, ../sass/index.scss */
+.chatter .men,
+.chatter .intro {
+  display: inline-block;
+}
+
+/* line 223, ../sass/index.scss */
+.message .msg {
+  margin: 10px;
+  line-height: 1rem;
+  font-size: 0.5rem;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* line 234, ../sass/index.scss */
+.flicker li {
+  display: inline-block;
+  width: 23%;
+  list-style-type: none;
+}

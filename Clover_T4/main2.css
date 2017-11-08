@@ -1,0 +1,205 @@
+/*
+淺咖啡：#4b3a34
+深咖啡：#241b17
+薑黃：#e2b241
+*/
+
+body {
+    background-image: url(img/bg-body.png);
+}
+
+.header {
+    background: #241b17;
+}
+
+.navbar-brand {
+    max-width: 80%;
+}
+
+.nav {
+    background-color: #494949;
+}
+
+.navbar-nav {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.nav-item {
+    text-align: center;
+}
+
+.navbar-inverse .navbar-nav .nav-link:focus,
+.navbar-inverse .navbar-nav .nav-link:hover {
+    color: #e2b241;
+}
+
+.nav-link {
+    line-height: 6em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content1 {
+    background: #4b3a34;
+}
+
+.banner1 {
+    position: relative;
+}
+
+.banner1-text {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+    
+}
+
+.banner2 {
+    width: 100%;
+    height: 100%;
+    background: url(img/bg-pattern.jpg);
+}
+
+
+.banner1>img, .itemimg {
+    width: 100%;
+}
+
+
+.content2 {
+    padding: 15px;
+    background: white;
+}
+
+.blog {
+
+}
+
+.section {
+
+    background: lightgray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background: #e2b241;
+}
+
+/*
+.footer .container .row .col {
+    text-align: center;
+}
+*/
+.fimg {
+    margin-left: 10px;
+}
+
+.ftitle {
+    padding: 20px 0 10px;
+    text-align: left;
+     font-weight: bold;
+}
+
+.ftext {
+    padding: 10px 10px 0;
+    font-size: 0.5em;
+}
+
+.fsection {
+    display: flex;
+}
+
+.date {
+    flex-basis: 42px;
+    flex-shrink: 1;
+    width: 42x;
+    height: 42px;
+    padding: 5px;
+    font-size:10px;
+    text-align: center;
+    background: url(img/bg-time.png) no-repeat left top;
+    color: white;
+}
+
+.fwrap {
+    flex-basis: auto;
+    flex-shrink: 17;
+    padding: 0 10px;
+}
+.fsubtitle {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.fbtn {
+    background: #241b17;
+    color: white;
+    padding: .2rem 1rem;
+}
+
+.emailform {
+    margin-bottom: 20px;
+}
+
+.footer .container .frow1 .col:nth-child(1), .footer .container .frow1 .col:nth-child(2) {
+    margin: 10px 0px;
+    background: url(img/separator-dark-vertical.png) repeat-y right;
+}
+
+
+.row2, .social {
+    background: url(img/separator-dark.png) repeat-x top;
+    padding-top: 10px;
+}
+
+.fnav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.f-item {
+    margin: 0 10px;
+    list-style: none;
+}
+
+.f-item a, .copyright {
+        color: #241b17;
+    font-size: 0.5em;
+}
