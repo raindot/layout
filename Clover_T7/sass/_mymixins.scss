@@ -1,0 +1,21 @@
+@mixin clearfix() {
+    &::after {
+        display: block;
+        clear: both;
+        content: "";
+    }
+}
+
+
+%redbtn {
+	line-height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white; 
+    // Needs latest Compass, add '@import "compass"' to your scss
+    // Permalink - use to edit and share this gradient:
+    // http://colorzilla.com/gradient-editor/#ff3232+0,ff8e8e+100
+    background-color: #ff3232; // Old browsers
+    @include filter-gradient(#ff3232, #ff8e8e, vertical); // IE6-9
+    @include background-image(linear-gradient(top, #ff3232 0%, #ff8e8e 100%));
+}

@@ -1,0 +1,518 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 10, ../sass/_mymixins.scss */
+.logobar .member .reg, .price .add {
+  line-height: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  background-color: #ff3232;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFF3232', endColorstr='#FFFF8E8E');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmMzIzMiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmOGU4ZSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff3232), color-stop(100%, #ff8e8e));
+  background-image: -moz-linear-gradient(top, #ff3232 0%, #ff8e8e 100%);
+  background-image: -webkit-linear-gradient(top, #ff3232 0%, #ff8e8e 100%);
+  background-image: linear-gradient(to bottom, #ff3232 0%, #ff8e8e 100%);
+}
+
+/* line 11, ../sass/index.scss */
+body {
+  background-color: #f2f2f2;
+}
+
+/* line 2, ../sass/_mymixins.scss */
+.logobar::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+/* line 18, ../sass/index.scss */
+.logobar .contact {
+  padding-top: 10px;
+  text-align: right;
+}
+/* line 21, ../sass/index.scss */
+.logobar .contact i, .logobar .contact span {
+  padding: 10px;
+}
+/* line 27, ../sass/index.scss */
+.logobar .member {
+  float: right;
+  padding: 20px;
+}
+/* line 36, ../sass/index.scss */
+.logobar .member .login {
+  padding: 0 20px;
+  border-left: 1px solid gray;
+}
+
+/* line 43, ../sass/index.scss */
+.logo {
+  display: none;
+  float: left;
+}
+@media (min-width: 992px) {
+  /* line 43, ../sass/index.scss */
+  .logo {
+    display: block;
+  }
+}
+
+/* line 51, ../sass/index.scss */
+.navlogo {
+  display: inline-block;
+}
+@media (min-width: 992px) {
+  /* line 51, ../sass/index.scss */
+  .navlogo {
+    display: none;
+  }
+}
+
+/* line 58, ../sass/index.scss */
+.search {
+  background: white;
+  border: none;
+  position: absolute;
+  right: 33px;
+}
+
+/* line 65, ../sass/index.scss */
+.list, .customers, .select, .price {
+  padding-top: 25px;
+}
+
+/* line 69, ../sass/index.scss */
+.title {
+  padding: 15px;
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* line 75, ../sass/index.scss */
+.list {
+  padding-top: 10px;
+  font-family: monospace;
+  color: #5c4358;
+}
+/* line 80, ../sass/index.scss */
+.list .listleft {
+  padding-right: 10px;
+  text-align: right;
+}
+/* line 85, ../sass/index.scss */
+.list .listright {
+  padding-left: 10px;
+}
+
+/* line 98, ../sass/index.scss */
+.customers {
+  text-align: center;
+}
+/* line 101, ../sass/index.scss */
+.customers .photo {
+  margin: 15px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+/* line 107, ../sass/index.scss */
+.customers .total {
+  color: red;
+}
+/* line 111, ../sass/index.scss */
+.customers .text {
+  font-size: 0.5rem;
+}
+
+/* line 119, ../sass/index.scss */
+.select ul li {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(1) {
+  background-color: #0d8225;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(2) {
+  background-color: #7518e7;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(3) {
+  background-color: #37ce84;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(4) {
+  background-color: #3d888d;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(5) {
+  background-color: #07723b;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(6) {
+  background-color: #94ba9b;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(7) {
+  background-color: #c053cd;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(8) {
+  background-color: #db326c;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(9) {
+  background-color: #2f67eb;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(10) {
+  background-color: #13f225;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(11) {
+  background-color: #1d5051;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(12) {
+  background-color: #ca212d;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(13) {
+  background-color: #8ec12a;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(14) {
+  background-color: #3fa626;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(15) {
+  background-color: #52b9e6;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(16) {
+  background-color: #800908;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(17) {
+  background-color: #3dfca8;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(18) {
+  background-color: #53f0d0;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(19) {
+  background-color: #88b8d0;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(20) {
+  background-color: #08a5f9;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(21) {
+  background-color: #cc63d7;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(22) {
+  background-color: #c9f311;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(23) {
+  background-color: #e45d36;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(24) {
+  background-color: #c62768;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(25) {
+  background-color: #4ee7a0;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(26) {
+  background-color: #3b4527;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(27) {
+  background-color: #4cb825;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(28) {
+  background-color: #9876d1;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(29) {
+  background-color: #64b661;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(30) {
+  background-color: #ebd84e;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(31) {
+  background-color: #2c8001;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(32) {
+  background-color: #5f36c6;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(33) {
+  background-color: #e13533;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(34) {
+  background-color: #b1bd7a;
+}
+/* line 124, ../sass/index.scss */
+.select ul li:nth-child(35) {
+  background-color: #b7e83c;
+}
+
+/* line 131, ../sass/index.scss */
+.product_name {
+  font-size: 1.2rem;
+  padding-top: 20px;
+}
+
+/* line 136, ../sass/index.scss */
+.product_subname {
+  color: gray;
+  padding: 15px 0;
+}
+
+/* line 142, ../sass/index.scss */
+.product_s img {
+  width: 32%;
+  font-size: 0;
+}
+
+/* line 149, ../sass/index.scss */
+.price {
+  text-align: right;
+}
+/* line 152, ../sass/index.scss */
+.price .stars {
+  text-align: left;
+  color: red;
+}
+/* line 157, ../sass/index.scss */
+.price .left {
+  display: inline-block;
+  width: 70%;
+}
+/* line 161, ../sass/index.scss */
+.price .left .price1 {
+  width: 100px;
+  padding: 10px;
+  margin-right: 0;
+  margin-left: auto;
+  text-align: center;
+  background: red;
+}
+/* line 170, ../sass/index.scss */
+.price .left .price2 {
+  padding: 15px;
+  background-color: white;
+  border: 1px solid #e8e8e8;
+}
+/* line 177, ../sass/index.scss */
+.price .right {
+  display: inline-block;
+  width: 20%;
+  padding: 10px;
+}
+/* line 182, ../sass/index.scss */
+.price .right .save {
+  font-size: 0.8rem;
+}
+/* line 187, ../sass/index.scss */
+.price .pricedes {
+  margin: 15px 0;
+  padding: 15px 0;
+  text-align: left;
+  border-top: 1px solid #e8e8e8;
+  color: gray;
+}
+/* line 195, ../sass/index.scss */
+.price .ship {
+  padding: 10px 0;
+}
+/* line 198, ../sass/index.scss */
+.price .ship .shipicon {
+  vertical-align: middle;
+}
+/* line 203, ../sass/index.scss */
+.price .selecttitle {
+  text-align: left;
+}
+/* line 207, ../sass/index.scss */
+.price .shipsize {
+  display: inline-block;
+  padding: 15px;
+}
+/* line 212, ../sass/index.scss */
+.price .shipqty {
+  display: inline-block;
+  padding: 15px;
+}
+/* line 217, ../sass/index.scss */
+.price .add {
+  width: 160px;
+  margin-right: 0;
+  margin-left: auto;
+}
+/* line 224, ../sass/index.scss */
+.price .share {
+  margin: 20px 0;
+  font-size: 0.8rem;
+}
+/* line 229, ../sass/index.scss */
+.price .social {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+}
+/* line 239, ../sass/index.scss */
+.price .facebook {
+  background-color: #3d67c1;
+}
+/* line 242, ../sass/index.scss */
+.price .twitter {
+  background-color: #32b6eb;
+}
+/* line 245, ../sass/index.scss */
+.price .google {
+  background-color: #ec5b4a;
+}
+/* line 248, ../sass/index.scss */
+.price .pinterest {
+  background-color: #cf1d10;
+}
+
+/* line 254, ../sass/index.scss */
+.product_des {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-family: monospace;
+  line-height: 1.5rem;
+}
+/* line 260, ../sass/index.scss */
+.product_des .active {
+  background-color: red;
+  color: white;
+}
+/* line 265, ../sass/index.scss */
+.product_des ul li {
+  display: inline-block;
+  padding: 10px;
+  background-color: white;
+}
+/* line 271, ../sass/index.scss */
+.product_des .des {
+  padding: 10px;
+  background-color: white;
+}
+/* line 275, ../sass/index.scss */
+.product_des .des .destitle {
+  padding: 10px 0;
+  color: black;
+}
+
+/* line 282, ../sass/index.scss */
+.footer {
+  padding: 20px 0;
+  background-color: red;
+}
+/* line 286, ../sass/index.scss */
+.footer .footerlogos {
+  line-height: 45px;
+}
+/* line 293, ../sass/index.scss */
+.footer ul li {
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid white;
+}
+/* line 298, ../sass/index.scss */
+.footer ul li a {
+  color: white;
+}
+/* line 304, ../sass/index.scss */
+.footer .footer_social {
+  color: white;
+}

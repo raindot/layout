@@ -1,0 +1,307 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass";
+@import "mymixins";
+@import "myvariables";
+
+body {
+    background-color: #f2f2f2;
+}
+
+
+.logobar {
+    @include clearfix;
+    .contact {
+        padding-top: 10px;
+        text-align: right;
+        i, span {
+            padding: 10px;
+        }
+        
+    }
+
+    .member {
+        float: right;
+        padding: 20px;
+
+        .reg {
+            
+            @extend %redbtn; 
+        }
+
+        .login {
+            padding: 0 20px;
+            border-left: 1px solid gray;
+        }
+    }
+}
+
+.logo {
+    display: none;
+    float: left;
+    @media (min-width: 992px) {
+        display: block;
+    }
+}
+
+.navlogo {
+    display: inline-block;
+    @media (min-width: 992px) {
+        display: none;
+    }
+}
+
+.search {
+    background: white;
+    border: none;
+    position: absolute;
+    right: 33px;
+}
+
+.list, .customers, .select, .price {
+    padding-top: 25px;
+}
+
+.title {
+    padding: 15px;
+    color: black;
+    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.list {
+    padding-top: 10px;
+    font-family: monospace;
+    color: $darkpurple;
+
+    .listleft {
+        padding-right: 10px;
+        text-align: right;
+    }
+
+    .listright {
+        padding-left: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+.customers {
+    text-align: center;
+
+    .photo {
+    margin: 15px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+    .total {
+    color: red;
+    }
+
+    .text {
+        font-size: 0.5rem;
+    }
+}
+
+
+
+.select {
+	ul li {
+		width: 20px;
+       height: 20px;
+       margin: 5px;
+       @for $i from 1 through 35 {
+        &:nth-child(#{$i}) {
+            background-color: rgb(random(255), random(255), random(255));
+        }
+    }    
+}
+}
+
+.product_name {
+        font-size: 1.2rem;
+        padding-top: 20px;
+    }
+
+.product_subname {
+        color: gray;
+        padding: 15px 0;        
+    }
+
+.product_s {
+		img {
+			width: 32%;
+            font-size: 0;
+		}
+}
+
+
+.price {
+    text-align: right;
+
+    .stars {
+        text-align: left;
+        color: red;
+        }
+
+    .left {
+        display: inline-block;
+        width: 70%;
+
+        .price1 {       
+            width: 100px;
+            padding: 10px;
+            margin-right: 0;
+            margin-left: auto; 
+            text-align: center;
+            background: red;
+        }
+
+        .price2 {
+            padding: 15px;
+            background-color: white;
+            border: 1px solid $light_gray;
+        }
+    }
+
+    .right {
+        display: inline-block;
+        width: 20%;
+        padding: 10px;
+
+        .save {
+            font-size: 0.8rem;
+        }
+    }
+
+    .pricedes {
+        margin: 15px 0;
+        padding: 15px 0;
+        text-align: left;
+        border-top: 1px solid $light_gray;
+        color: gray;
+    }
+
+    .ship {
+        padding: 10px 0;
+
+        .shipicon {
+            vertical-align: middle;
+        }
+    }
+
+    .selecttitle {
+        text-align: left;
+    }
+    
+    .shipsize {
+        display: inline-block;
+        padding: 15px;
+    }
+
+    .shipqty {
+        display: inline-block;
+        padding: 15px;
+    }
+
+    .add {
+        @extend %redbtn;
+        width: 160px;
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    .share {
+        margin: 20px 0;
+        font-size: 0.8rem;
+    }
+
+    .social {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: white;
+
+    }
+
+    .facebook {
+        background-color: #3d67c1;
+    }
+    .twitter {
+        background-color: #32b6eb;
+    }
+    .google {
+        background-color: #ec5b4a;
+    }
+    .pinterest {
+        background-color: #cf1d10;
+    }
+
+}
+
+.product_des {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: monospace;
+    line-height: 1.5rem;
+
+    .active {
+        background-color: red;
+        color: white;
+    }
+
+    ul li {
+        display: inline-block;
+        padding: 10px;
+        background-color: white;
+    }
+
+    .des {
+        padding: 10px;
+        background-color: white;
+
+        .destitle {
+            padding: 10px 0;
+            color: black;
+        }
+    }
+}
+
+.footer {
+    padding: 20px 0 ;
+    background-color: red;
+    
+    .footerlogos {
+        line-height: 45px;
+    }
+
+    
+
+
+    ul li {
+        display: inline-block;
+        padding: 10px;
+        border-right: 1px solid white;
+
+        a {
+            color: white;
+        }
+    }
+
+
+    .footer_social {
+        color: white;
+    }
+}
