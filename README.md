@@ -1,7 +1,5 @@
 # 切版練習
 
-# 切版練習
-
 * 形象網頁(RWD SASS Bootstrap) <a href="https://raindot.github.io/layout/Clover_T6/index.html" target="_blank">DEMO</a>
 
 * 商品購物(使用 SASS) <a href="https://raindot.github.io/layout/Clover_T7/index.html" target="_blank">DEMO</a>
